@@ -1,0 +1,83 @@
+#project {
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+
+#project .project-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#project .filter-button {
+  color: rgb(48, 48, 47);
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  background-color: #ddd;
+  text-decoration: underline;
+  font-weight: bold;
+
+  /* Increase the space between text and underline */
+  text-decoration-skip-ink: none; /* Disable skipping ink */
+  text-underline-offset: 6px; /* Adjust the offset (increase as needed) */
+}
+
+#project .filter-button:hover {
+  color:#CFB53B;
+}
+
+#project .filter-button.active {
+  color:#CFB53B;
+
+}
+
+#project .projectDisplay {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  align-content: center;
+}
+#project .project {
+  height: 500px;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+#project .project img {
+  width: 300px;
+  height: auto;
+}
+
+
+
+#project .project a {
+  text-decoration: none;
+  background-color: rgb(48, 48, 47);
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#project .project .sk button {
+  background-color: #ddd;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+

@@ -1,0 +1,266 @@
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  z-index: 50px;
+ 
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the navbar stays above other elements */
+  background-color: #020444; /* Example background color */
+}
+
+.mySlides {
+  display: none;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+ 
+  .leoism1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.column1 {
+    margin-bottom: 20px;
+}
+
+.column1 img {
+    max-width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .leoism1 {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    .column1 {
+        max-width: 50%;
+    }
+}
+.leoism2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  
+}
+
+.leoism2 .column2 {
+  width: 48%; /* Adjust as needed */
+}
+
+.leoism2 .column2 img {
+  width: 50%; /* Ensure image fills its container */
+  margin-left: 100px;
+  margin-right: 50px; /* Add margin to the left of the image */
+}
+
+@media screen and (max-width: 768px) {
+  /* For small devices */
+  .leoism2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leoism2 .column2 {
+    width: 100%;
+    margin-bottom: 20px; /* Add space between text and image */
+    text-align: center; /* Center text on small devices */
+  }
+}
+
+
+.leoism3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.column3 {
+  margin-bottom: 20px;
+}
+
+.column3 img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Add margin to create space between image and text */
+}
+
+.column3 h1 {
+  margin-bottom: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.column3 p {
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.read-more-btn {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 16px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .leoism3 {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .column3 {
+    max-width: 50%;
+  }
+
+  .column3 img {
+    order: -1;
+    margin-left: 0;
+    margin-right: 20px;
+    margin-bottom: 0; /* Reset margin-bottom */
+  }
+}
+
+
+.leoism4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.column4 {
+  margin-bottom: 20px;
+}
+
+.column4 img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 20px; /* Add margin to create space between image and text */
+
+  margin-left: 90px;
+  margin-right: 30px;
+}
+
+.column4 h1 {
+  margin-top: 20px; /* Add margin to create space between image and text */
+  margin-bottom: 10px;
+  font-size: 1.5em; /* Adjust font size as needed */
+}
+
+.column4 p {
+  margin-top: 10px; /* Add margin to create space between image and text */
+  margin-bottom: 20px;
+}
+
+.read-more-btn {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 16px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .leoism4 {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .column4 {
+    max-width: 50%;
+  }
+
+  
+}
+
+

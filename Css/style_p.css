@@ -1,0 +1,121 @@
+#backHome {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgb(74, 74, 68);
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  text-align: justify;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 100px 100px 100px 250px;
+  background-color: #f7f7f7;
+}
+
+#title {
+  font-size: 20px;
+  margin-top: 20px;
+  color: rgb(250, 249, 251);
+  font-weight: bold;
+  background: linear-gradient(141deg, rgb(46, 2, 43) 11%, rgb(191, 111, 197) 48%, rgb(72, 22, 72) 83%);
+  padding-left: 6px;
+}
+
+.ks {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ks img {
+ width:500px; /* Adjusted image width to fit smaller screens */
+  height: auto;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .ks img {
+    width: calc(50% - 20px); /* Set image width to 50% of the container minus margin */
+    margin-left: 0;
+  }
+}
+
+h3 {
+  color: rgba(205, 16, 85, 0.842);
+}
+
+ul li {
+  color: rgb(6, 13, 148);
+  margin-bottom: 10px;
+}
+
+ul #link {
+  padding-bottom: 20px;
+}
+
+ul li p {
+  color: rgb(70, 70, 66);
+}
+
+ul #link {
+  list-style-type: none;
+}
+
+li h3 {
+  color: rgb(6, 13, 148);
+}
+
+ul #link a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgb(105, 127, 222);
+  color: white;
+  margin-right: 10px;
+}
+
+ul li span {
+  color: rgb(48, 114, 212);
+}
+
+/* Media query for smaller devices */
+@media only screen and (max-width: 600px) {
+
+  body {
+      margin: 50px;
+  }
+
+  .ks img {
+      margin-left: 0;
+  }
+
+  .ks {
+      padding: 10px;
+  }
+
+  ul #link a {
+      padding: 5px 10px;
+      margin-right: 5px;
+  }
+}
