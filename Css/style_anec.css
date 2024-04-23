@@ -35,10 +35,10 @@ body {
 }
 
 .slideshow-container {
-    max-width: 100%; /* Set maximum width to 100% for responsiveness */
+    max-width: 50%; /* Set maximum width to 100% for responsiveness */
     position: relative;
     margin: auto;
-    height: 400px; /* Set the desired height here */
+    height: 1000px;
     overflow: hidden;
 }
 
