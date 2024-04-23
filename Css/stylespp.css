@@ -77,13 +77,15 @@
 }
 
 /* Media query for small devices (e.g., phones) */
+/* Media query for small devices (e.g., phones) */
 @media (max-width: 768px) {
   #project .projectDisplay {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Display projects in a row */
+    gap: 20px; /* Add space between projects */
   }
 
   #project .project {
-    width: 90%; /* Adjust as needed */
-    margin-bottom: 20px; /* Add space between projects */
+    width: calc(33.33% - 20px); /* Calculate width for each project */
+    margin-bottom: 0; /* Remove margin bottom */
   }
 }
