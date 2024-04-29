@@ -8,3 +8,6 @@ menu.onclick = () => {
 };
 
 
+function downloadFile() {
+  window.location.href = "https://drive.google.com/file/d/1nM_i0_wkYE4vjmC_YkZI1WKt4blZZuEU/view?usp=sharing";
+}
