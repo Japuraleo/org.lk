@@ -59,39 +59,7 @@ p {
   font-weight: bold;
 }
 
-.exco1 {
-  display: flex;
-  flex-wrap: wrap; /* Allow flex items to wrap to next line */
-  justify-content: center; /* Center items horizontally */
-  gap: 20px; /* Adjust the gap between boxes as needed */
-}
 
-.exco1 table {
-  border-spacing: 0;
-  margin: 0 auto;
-  width: 100%; /* Ensure table takes full width */
-  max-width: 300px; /* Limit the table width */
-  background-color: #E6BE8A;
-}
-
-.exco1 td {
-  width: 200px; /* Set the width of each box */
-  text-align: center;
-  padding: 10px;
-}
-
-
-
-.exco1 img {
-  width: 100%; /* Ensure images fill the cell */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.exco1 p {
-  margin: 0;
-  font-size: 14px;
-  font-weight: bold;
-}
 
 .exco2 {
   display: flex;
