@@ -117,11 +117,13 @@
         max-width: 50%;
     }
 }
+/* Default styles */
+/* Default styles */
+/* Default styles */
 .leoism2 {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  
 }
 
 .leoism2 .column2 {
@@ -130,23 +132,29 @@
 
 .leoism2 .column2 img {
   width: 50%; /* Ensure image fills its container */
-  margin-left: 100px;
+  margin-left: 120px;
   margin-right: 50px; /* Add margin to the left of the image */
 }
 
-@media screen and (max-width: 768px) {
-  /* For small devices */
+/* Media query for small devices */
+@media only screen and (max-width: 768px) {
   .leoism2 {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Stack columns on top of each other */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
   }
 
   .leoism2 .column2 {
-    width: 100%;
-    margin-bottom: 20px; /* Add space between text and image */
-    text-align: center; /* Center text on small devices */
+    width: 100%; /* Full width for column */
+    margin-bottom: 20px; /* Add some space between columns */
+  }
+
+  .leoism2 .column2 img {
+    width: 50%; /* Decrease image size */
+    margin: 0; /* Remove left and right margins */
   }
 }
+
 
 
 .leoism3 {
@@ -209,6 +217,7 @@
 }
 
 
+/* Default styles */
 .leoism4 {
   display: flex;
   flex-direction: column;
@@ -225,9 +234,6 @@
   max-width: 50%;
   height: auto;
   margin-bottom: 20px; /* Add margin to create space between image and text */
-
-  margin-left: 90px;
-  margin-right: 30px;
 }
 
 .column4 h1 {
@@ -258,9 +264,12 @@
 
   .column4 {
     max-width: 50%;
+    margin-left: 10px; /* Add margin to separate columns */
+    margin-right: 10px; /* Add margin to separate columns */
   }
 
-  
+  .column4 img {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
-
-
