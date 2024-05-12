@@ -1,3 +1,4 @@
+/* Default styles */
 #project {
   display: flex;
   flex-direction: column;
@@ -34,6 +35,23 @@
 #project .filter-button.active {
   color:#CFB53B;
 }
+
+/* Media query for small devices */
+@media (max-width: 768px) {
+  #project {
+    padding-bottom: 20px; /* Reduce padding for small devices */
+    margin-top: 20px; /* Reduce margin for small devices */
+  }
+
+  #project .project-buttons {
+    margin-bottom: 10px; /* Reduce margin for small devices */
+  }
+
+  #project .filter-button {
+    font-size: 16px; /* Reduce font size for small devices */
+  }
+}
+
 
 #project .projectDisplay {
   display: grid;
@@ -76,16 +94,73 @@
   margin-bottom: 5px;
 }
 
-/* Media query for small devices (e.g., phones) */
-/* Media query for small devices (e.g., phones) */
+/* Default styles */
+#project .projectDisplay {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  align-content: center;
+}
+
+#project .project {
+  height: 500px;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+#project .project img {
+  width: 300px;
+  height: auto;
+}
+
+#project .project a {
+  text-decoration: none;
+  background-color: rgb(48, 48, 47);
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#project .project .sk button {
+  background-color: #ddd;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+/* Media query for small devices */
 @media (max-width: 768px) {
   #project .projectDisplay {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Display projects in a row */
-    gap: 20px; /* Add space between projects */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid columns for small devices */
+    gap: 20px; /* Reduce gap for small devices */
   }
 
   #project .project {
-    width: calc(33.33% - 20px); /* Calculate width for each project */
-    margin-bottom: 0; /* Remove margin bottom */
+    width: 200px; /* Adjust project width for small devices */
+    height: auto; /* Auto height for small devices */
+    padding: 10px; /* Reduce padding for small devices */
+  }
+
+  #project .project img {
+    width: 100%; /* Make image fill its container for small devices */
+  }
+
+  #project .project a {
+    padding: 8px; /* Adjust padding for small devices */
+    font-size: 14px; /* Adjust font size for small devices */
+  }
+
+  #project .project .sk button {
+    padding: 3px; /* Adjust padding for small devices */
+    margin-bottom: 3px; /* Adjust margin for small devices */
   }
 }
+
