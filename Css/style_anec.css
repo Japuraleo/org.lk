@@ -38,7 +38,7 @@ body {
     max-width: 50%; /* Set maximum width to 100% for responsiveness */
     position: relative;
     margin: auto;
-    height: 1000px;
+    height: 820px;
     overflow: hidden;
 }
 
@@ -174,4 +174,21 @@ img:hover {
     .next {
         font-size: 16px; /* Adjust the font size of the buttons */
     }
+}
+
+/* QR */
+.qr-box {
+  width: 150px;      /* size of the box */
+  height: 150px;     /* keep it square */
+  border: 1px solid #ccc; /* optional border */
+  padding: 5px;      /* optional spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;    /* spacing around box */
+}
+
+.qr-image {
+  max-width: 100%;
+  max-height: 100%;
 }
