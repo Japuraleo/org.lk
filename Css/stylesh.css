@@ -197,6 +197,41 @@
   margin-right: 50px;
 }
 
+.read-more-btn:hover {
+  background: linear-gradient(135deg, #5a7bff, #4063de);
+  transform: translateY(-2px);
+}
+
+.join-now-btn {
+  display: block;            
+  margin: 24px 0 0; 
+  max-width : 100px;
+  text-align: center;
+  background: linear-gradient(135deg, #959cb8, #5a7bff);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(64, 99, 222, 0.3);
+  transition: all 0.3s ease;
+}
+
+.join-now-btn:hover {
+  background: linear-gradient(135deg, #5a7bff, #4063de);
+  box-shadow: 0 6px 16px rgba(32, 42, 78, 0.5);
+  transform: translateY(-2px);
+}
+
+.join-now-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(95, 123, 223, 0.4);
+}
+
+
 @media only screen and (min-width: 768px) {
   .leoism3 {
     flex-direction: row;
