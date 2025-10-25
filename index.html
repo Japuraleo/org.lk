@@ -204,6 +204,34 @@
         </div>
       </section>
 
+      <!-- === JPURA D7 CHATBOT START === -->
+      <link rel="stylesheet" href="css/jpura-chat.css">
+
+      <!-- Chat toggle button -->
+      <div id="jpuraChat-toggle" class="jpuraChat-toggle" aria-label="Open chat" role="button" tabindex="0">💬</div>
+
+      <!-- Chat container -->
+      <div id="jpuraChat-container" class="jpuraChat-container jpuraChat-hidden" aria-hidden="true" aria-live="polite">
+      <div class="jpuraChat-header" role="banner">
+      <div class="jpuraChat-header-left">
+        <img src="image/leos-logo.png" alt="J'pura D7 Leos" class="jpuraChat-logo">
+      <div class="jpuraChat-title">J'pura D7 Leos — Chatbot</div>
+      </div>
+      <button id="jpuraChat-close" class="jpuraChat-close" aria-label="Close chat">✕</button>
+      </div>
+
+      <div id="jpuraChat-messages" class="jpuraChat-messages" role="log"></div>
+
+      <form id="jpuraChat-form" class="jpuraChat-form" onsubmit="return false;">
+        <input id="jpuraChat-input" class="jpuraChat-input" type="text" placeholder="Type a message..." aria-label="Message">
+        <button id="jpuraChat-send" class="jpuraChat-send" type="submit" aria-label="Send message">Send</button>
+      </form>
+      </div>
+
+    <script src="jpura-chat.js" defer></script>
+    <!-- === JPURA D7 CHATBOT END === -->
+
+
   <footer class="footer">
     <div class="social-links">
       <a href="https://www.facebook.com/share/17BCxoosen/" class="social-link"><i class="fab fa-facebook"></i></a>
@@ -218,8 +246,8 @@
   </footer>
 
 
-    <script src="javascript/script.js" defer></script>
-   <script src="javascript/script2.js" defer></script>
-   
+  <script src="javascript/script.js" defer></script>
+  <script src="javascript/script2.js" defer></script>
+    
   </body>
 </html>
